@@ -12,7 +12,7 @@ gb build
 ./bin/sessions-example
 ```
 
-1. Go to http://localhost:8000/login
+1. Go to [http://localhost:8000/login](http://localhost:8000/login)
 2. Enter your name and click `Login`
-3. Proceed to a `/secure` page
+3. Proceed to a [/secure](http://localhost:8000/secure) page
 4. Verify that it greets you by name
