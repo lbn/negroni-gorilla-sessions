@@ -22,7 +22,7 @@ func NewAuthMiddleware() *AuthMiddleware {
 // The middleware handler
 func (m *AuthMiddleware) ServeHTTP(w http.ResponseWriter, req *http.Request, next http.HandlerFunc) {
 	log.Println("Checking session")
-	session, _ := store.Get(req, "session-name")
+	session, _ := store.Get(req, sessionCookieName)
 	if session.IsNew {
 		w.WriteHeader(401)
 		return
